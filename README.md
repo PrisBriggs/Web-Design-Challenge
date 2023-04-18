@@ -20,7 +20,7 @@ All pages can be visited through any of the pages by clicking on the correspondi
 
 All pages are responsive regarding different sizes of screen.
 
-Ultimately, the website was deployed to GitHub. 
+Ultimately, the website was deployed to GitHub. The site is live at https://prisbriggs.github.io/Web-Design-Challenge/.
 
 In addition to the HTML and CSS files that contain each page's coding and the resource files (images and csv file with dataset), there is a Jupyter Notebook file that contains the code for transforming the dataframe into HTML data. 
 
