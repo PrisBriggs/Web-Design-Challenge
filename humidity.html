@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Humidity Visualization</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static\styles.css">
+</head>
+<body>
+   
+  <nav style="padding-top: 0px; padding-bottom: 0px; padding-left: 15px;" class="navbar navbar-expand-lg">
+      <a style="color: #fff" class="navbar-brand" class="fw-bolder" href="index.html">Latitude</a>         
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <a style="padding-right: 20px;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a style="padding-right: 20px;" class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a style="padding-right: 30px;" class="nav-link" href="data.html">Data</a>
+        </li>
+        </li>
+      </ul>
+  </nav>
+
+    <div class="container">
+      <div class="box box-1-hum">
+        <h1>Humidity</h1>
+          <hr>
+          <img id="img-hum" src="Images\Fig2.png" class="text-center" alt="">
+          <p>This graph shows that the main pattern that emerges is that humidity varies with latitude — 
+            the number of cities that have higher humidity values is much greater near the equator than 
+            in areas further north and south (towards the poles).
+            The equatorial and tropical areas receive, on average, more insolation, resulting in a greater 
+            amount of evaporation and consequently a higher content of water vapor in the air. For this  
+            reason, cities in these areas are the wettest.
+            Although Northern Hemisphere cities are more representative in the source dataset than 
+            Southern Hemisphere cities, it is summer in January in the latter, which means that humidity
+            is even higher at that time of year.
+            This analysis also shows that the lowest values of humidity are found near the pole in the 
+            Northern Hemisphere, especially in winter, where less insolation, cold temperatures and 
+            surface ice limit the amount of evaporation.
+          </p>
+      </div>          
+                    
+      <div class="box box-2">
+        <h2>Visualizations</h2>
+        <hr>
+          <div class="box box-3">
+            <div class="row text-center">
+              <div class="col-xs-3 col-sm-10 col-md-12 col-lg-12">
+                <a href="temperature.html"><img id="img-visuals" src="Images\Fig1.png" alt=""></a>
+                <a href="humidity.html"><img id="img-visuals" class="hum2" src="Images\Fig2.png" alt=""></a>
+                <a href="cloudiness.html"><img id="img-visuals" src="Images\Fig3.png" alt=""></a>
+                <a href="windspeed.html"><img id="img-visuals" src="Images\Fig4.png" alt=""></a>
+              </div>
+            </div>  
+          </div>
+      </div>
+      
+              
+    </div>  
+    
+      
+</body>
+
+</html>
